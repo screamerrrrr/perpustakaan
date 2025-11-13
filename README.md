@@ -15,10 +15,12 @@ php artisan key:generate
 # PASTIKAN koneksi PGSQL di .env sudah benar SEBELUM migrate
 php artisan migrate --seed
 ⚠️ PENTING: Cek dan edit file .env Anda, terutama bagian DB_CONNECTION=pgsql dan DB_DATABASE, DB_USERNAME, DB_PASSWORD.
-
+⚠️ PENTING: Atau bisa cara cepat dengan upload .sql ke pgsql
+Dengan login di aplikasi
+Admin : aldan@admin.com | aldan123
+User :  user@user.com | aldan123
 🔒 Roles dan Fitur Utama
 Aplikasi ini punya 2 jenis pengguna:
-
 👑 Admin (Manajemen Penuh)
 Admin bisa mengurus semua data:
 Manajemen Buku: CRUD (Buat, Lihat, Edit, Hapus) dan update stok buku.
@@ -27,8 +29,6 @@ Pencatatan Peminjaman: Mencatat peminjaman. Peminjam dicari berdasarkan Nama/Use
 👤 User (Anggota)
 Anggota hanya bisa melihat info yang relevan:
 Katalog Buku: Melihat daftar dan stok buku.
-
-
 💡 Troubleshooting Cepat
 Database Error: Cek koneksi di .env dan pastikan server PostgreSQL Anda ON.
 Akses Ditolak (403): Pastikan Anda login sebagai Admin untuk mengakses fitur manajemen.
